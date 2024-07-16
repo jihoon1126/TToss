@@ -6,7 +6,9 @@ import 'common/data/preference/app_preferences.dart';
 
 void main() async {
   final bindings = WidgetsFlutterBinding.ensureInitialized();
-  // Splash 등록
+
+  // 화면이 바인딩될 때까지 NativeSplash 표시
+  // 비표시는 s_main.dart의 afterFirstLayout 함수
   FlutterNativeSplash.preserve(widgetsBinding: bindings);
 
   await EasyLocalization.ensureInitialized();
