@@ -26,12 +26,11 @@ class HomeFragment extends StatelessWidget {
             edgeOffset: TtossAppBar.appBarHeight,
             onRefresh: () async {
               //await sleepAsync(2000.ms);
-              await Future.delayed(
-                  const Duration(milliseconds: 2000), () => {});
+              await Future.delayed(const Duration(milliseconds: 2000), () => {});
             },
             child: SingleChildScrollView(
               padding: const EdgeInsets.only(
-                top: TtossAppBar.appBarHeight,
+                top: TtossAppBar.appBarHeight + 10,
                 bottom: MainScreenState.bottomNavigatorHeight,
               ),
               child: Padding(
@@ -99,13 +98,7 @@ class HomeFragment extends StatelessWidget {
           onTap: () {
             context.showErrorSnackbar('error');
           },
-          child: '에러 보여주기 버튼'
-              .text
-              .white
-              .size(13)
-              .make()
-              .centered()
-              .pSymmetric(h: 10, v: 5),
+          child: '에러 보여주기 버튼'.text.white.size(13).make().centered().pSymmetric(h: 10, v: 5),
         ));
   }
 

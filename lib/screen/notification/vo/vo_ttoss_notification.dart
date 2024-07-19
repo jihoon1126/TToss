@@ -1,12 +1,12 @@
 import 'notification_type.dart';
 
-class TossNotification {
+class TtossNotification {
   final NotificationType type;
   final String description;
   final DateTime time;
   bool isRead;
 
-  TossNotification({
+  TtossNotification({
     required this.type,
     required this.description,
     required this.time,

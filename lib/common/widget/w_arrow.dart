@@ -2,10 +2,15 @@ import 'package:flutter/material.dart';
 
 class Arrow extends StatelessWidget {
   final double size;
+  final Color color;
   final AxisDirection direction;
 
-  const Arrow({Key? key, this.size = 15, AxisDirection? direction})
-      : direction = direction ?? AxisDirection.right,
+  const Arrow({
+    Key? key,
+    this.size = 15,
+    this.color = Colors.white,
+    AxisDirection? direction,
+  })  : direction = direction ?? AxisDirection.right,
         super(key: key);
 
   @override
@@ -13,6 +18,7 @@ class Arrow extends StatelessWidget {
     return Icon(
       icon,
       size: size,
+      color: color,
     );
   }
 
