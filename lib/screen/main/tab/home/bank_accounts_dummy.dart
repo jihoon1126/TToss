@@ -29,10 +29,16 @@ main() {
 // List
 final List<BankAccount> bankAccounts = [
   bankAccountShinhan1,
+  bankAccountShinhan1,
+  bankAccountShinhan1,
+  bankAccountShinhan1,
+  bankAccountShinhan1,
+  bankAccountShinhan1,
+  bankAccountShinhan1,
   bankAccountShinhan2,
   bankAccountShinhan3,
   bankAccountTtoss,
-  bankAccountKakao,
+  bankAccountKakao
 ];
 
 // Map

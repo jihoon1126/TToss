@@ -41,6 +41,8 @@ class MainScreenState extends State<MainScreen> with SingleTickerProviderStateMi
 
   static double get bottomNavigationBarBorderRadius => 30.0;
 
+  static const double bottomNavigatorHeight = 50.0;
+
   @override
   void initState() {
     super.initState();
@@ -89,7 +91,6 @@ class MainScreenState extends State<MainScreen> with SingleTickerProviderStateMi
   }
 
   bool get isRootPage => _currentTab == TabItem.home && _currentTabNavigationKey.currentState?.canPop() == false;
-
   // body 페이지 바인딩
   // IndexedStack - 여러 자식 위젯 중 하나만 표시하고 나머지는 숨김
   IndexedStack get pages => IndexedStack(
@@ -110,6 +111,7 @@ class MainScreenState extends State<MainScreen> with SingleTickerProviderStateMi
           .toList());
 
   // 뒤로가기 실행
+
   void _handleBackPressed(bool didPop) {
     debugPrint('didPop :$didPop');
 
