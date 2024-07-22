@@ -38,8 +38,7 @@ mixin KeyboardDetector<T extends StatefulWidget> on State<T> {
     super.dispose();
   }
 
-  initKeyboardDetector(
-      {final Function(double)? willShowKeyboard, final Function()? willHideKeyboard}) {
+  initKeyboardDetector({final Function(double)? willShowKeyboard, final Function()? willHideKeyboard}) {
     subscribingId = keyboardUtils.add(
         listener: k.KeyboardListener(willHideKeyboard: () {
       if (willHideKeyboard != null) {

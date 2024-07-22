@@ -79,6 +79,7 @@ class MainScreenState extends State<MainScreen> with SingleTickerProviderStateMi
         drawer: const MenuDrawer(),
         body: Container(
           //color: context.appColors.seedColor.getMaterialColorValues[200],
+          //color: context.appColors.appBarBackground,
           padding: EdgeInsets.only(bottom: extendBody ? 60 - bottomNavigationBarBorderRadius : 0),
           child: SafeArea(
             bottom: !extendBody,
