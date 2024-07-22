@@ -13,6 +13,8 @@ void main() async {
   FlutterNativeSplash.preserve(widgetsBinding: bindings);
 
   await EasyLocalization.ensureInitialized();
+
+  // AppPreferences 초기화
   await AppPreferences.init();
 
   timeago.setLocaleMessages('ko', timeago.KoMessages());

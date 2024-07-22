@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 class SearchAotoCompleteList extends StatelessWidget with SearchStockDataProvider {
   final TextEditingController controller;
 
+  // mixin을 참조하고 있으므로 생성자가 const가 되어서는 안됨
   SearchAotoCompleteList({super.key, required this.controller});
 
   @override
